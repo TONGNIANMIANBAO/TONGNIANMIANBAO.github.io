@@ -101,12 +101,13 @@
 
 <meta name="description" content="interesting">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/archives/2017/07/index.html">
+<meta property="og:title" content="标签">
+<meta property="og:url" content="http://yoursite.com/tags/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="interesting">
+<meta property="og:updated_time" content="2017-07-08T03:34:47.653Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="标签">
 <meta name="twitter:description" content="interesting">
 
 
@@ -135,13 +136,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/archives/2017/07/"/>
+  <link rel="canonical" href="http://yoursite.com/tags/"/>
 
 
 
 
 
-  <title>归档 | Hexo</title>
+  <title>标签 | Hexo</title>
   
 
 
@@ -175,7 +176,7 @@
     
   
 
-  <div class="container sidebar-position-right  page-archive  ">
+  <div class="container sidebar-position-right page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -323,140 +324,27 @@
           <div id="content" class="content">
             
 
-  <section id="posts" class="posts-collapse">
-    <span class="archive-move-on"></span>
+  <div id="posts" class="posts-expand">
+  <header class="post-header">
 
-    <span class="archive-page-counter">
-      
-      
-      
-        
-      
-      嗯..! 目前共计 3 篇日志。 继续努力。
-    </span>
+	<h1 class="post-title" itemprop="name headline">标签</h1>
+
+
+
+</header>
 
     
-
-      
-      
-      
-
-      
-        
-        <div class="collection-title">
-          <h2 class="archive-year motion-element" id="archive-year-2017">2017</h2>
+    
+      <div class="tag-cloud">
+        <div class="tag-cloud-title">
+            目前共计 2 个标签
         </div>
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/07/08/MY-NEW-POST/" itemprop="url">
-              
-                <span itemprop="name">MY NEW POST</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-07-08T11:44:35+08:00"
-              content="2017-07-08" >
-          07-08
-        </time>
+        <div class="tag-cloud-tags">
+          <a href="/tags/hello/" style="font-size: 12px; color: #ccc">hello</a> <a href="/tags/hhh/" style="font-size: 12px; color: #ccc">hhh</a>
+        </div>
       </div>
-
-    </header>
-  </article>
-
-
-
     
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/07/06/world/" itemprop="url">
-              
-                <span itemprop="name">hello world!</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-07-06T14:02:42+08:00"
-              content="2017-07-06" >
-          07-06
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/07/06/hello-world/" itemprop="url">
-              
-                <span itemprop="name">Hello World</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-07-06T13:35:28+08:00"
-              content="2017-07-06" >
-          07-06
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-  </section>
-
-  
-
+  </div>
 
 
           </div>
@@ -464,6 +352,12 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8yOTM3My81OTQx"></div>
+    
+  </div>
+
 
         </div>
         
@@ -682,12 +576,10 @@
   
 
   
-  
-    <script type="text/javascript" id="motion.page.archive">
-      $('.archive-year').velocity('transition.slideLeftIn');
-    </script>
-  
+    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
 
+  
 
   
 
@@ -716,6 +608,17 @@
 
 
 
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
   
 
 

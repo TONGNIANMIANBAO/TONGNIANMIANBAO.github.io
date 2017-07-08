@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-07-06T06:29:34.165Z</updated>
+  <updated>2017-07-08T03:58:57.458Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,11 +16,29 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>world!</title>
+    <title>MY NEW POST</title>
+    <link href="http://yoursite.com/2017/07/08/MY-NEW-POST/"/>
+    <id>http://yoursite.com/2017/07/08/MY-NEW-POST/</id>
+    <published>2017-07-08T03:44:35.000Z</published>
+    <updated>2017-07-08T03:58:57.458Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="test" scheme="http://yoursite.com/categories/test/"/>
+    
+    
+      <category term="hhh" scheme="http://yoursite.com/tags/hhh/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>hello world!</title>
     <link href="http://yoursite.com/2017/07/06/world/"/>
     <id>http://yoursite.com/2017/07/06/world/</id>
     <published>2017-07-06T06:02:42.000Z</published>
-    <updated>2017-07-06T06:29:34.165Z</updated>
+    <updated>2017-07-08T03:42:53.262Z</updated>
     
     <content type="html"><![CDATA[<p>hello world</p>
 ]]></content>
@@ -31,6 +49,8 @@
 
     
     </summary>
+    
+      <category term="hexo" scheme="http://yoursite.com/categories/hexo/"/>
     
     
       <category term="hello" scheme="http://yoursite.com/tags/hello/"/>
