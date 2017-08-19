@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tongnianmianbao.github.io/"/>
-  <updated>2017-08-16T12:02:16.226Z</updated>
+  <updated>2017-08-19T02:49:24.797Z</updated>
   <id>https://tongnianmianbao.github.io/</id>
   
   <author>
@@ -14,6 +14,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>SSH密匙</title>
+    <link href="https://tongnianmianbao.github.io/2017/08/19/SSH%C2%80/"/>
+    <id>https://tongnianmianbao.github.io/2017/08/19/SSH/</id>
+    <published>2017-08-19T02:42:35.000Z</published>
+    <updated>2017-08-19T02:49:24.797Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="生成添加秘钥"><a href="#生成添加秘钥" class="headerlink" title="生成添加秘钥"></a>生成添加秘钥</h2><p>在终端（Terminal）输入：</p>
+<p>ssh-keygen -t rsa -C “Github的注册邮箱地址”</p>
+<p>一路Enter过来就好，待秘钥生成完毕，会得到两个文件id_rsa和id_rsa.pub，用带格式的记事本打开id_rsa.pub，Ctrl + a复制里面的所有内容，然后进入<a href="https://github.com/settings/ssh" target="_blank" rel="external">https://github.com/settings/ssh</a><br>将复制的内容粘贴到Key的输入框，随便写好Title里面的内容，点击Add SSH key按钮即可。<br><img src="http://upload-images.jianshu.io/upload_images/291600-3bff2a591beb2bb6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="SSH"></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;生成添加秘钥&quot;&gt;&lt;a href=&quot;#生成添加秘钥&quot; class=&quot;headerlink&quot; title=&quot;生成添加秘钥&quot;&gt;&lt;/a&gt;生成添加秘钥&lt;/h2&gt;&lt;p&gt;在终端（Terminal）输入：&lt;/p&gt;
+&lt;p&gt;ssh-keygen -t rsa -C “Github的注
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>最長回文算法</title>
