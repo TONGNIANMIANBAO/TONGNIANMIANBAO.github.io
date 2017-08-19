@@ -345,7 +345,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/07/08/MY-NEW-POST/" itemprop="url">MY NEW POST</a></h1>
+                <a class="post-title-link" href="/2017/07/08/MY-NEW-POST/" itemprop="url">最長回文算法</a></h1>
         
 
         <div class="post-meta">
@@ -380,8 +380,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/test/" itemprop="url" rel="index">
-                    <span itemprop="name">test</span>
+                  <a href="/categories/算法/" itemprop="url" rel="index">
+                    <span itemprop="name">算法</span>
                   </a>
                 </span>
 
@@ -397,7 +397,7 @@
 
           
           
-             <span id="/2017/07/08/MY-NEW-POST/" class="leancloud_visitors" data-flag-title="MY NEW POST">
+             <span id="/2017/07/08/MY-NEW-POST/" class="leancloud_visitors" data-flag-title="最長回文算法">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -426,9 +426,15 @@
 
       
         
-          
-            
-          
+          <h3 id="1-Brute-Force-暴力算法"><a href="#1-Brute-Force-暴力算法" class="headerlink" title="1.Brute Force(暴力算法)"></a>1.Brute Force(暴力算法)</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">public</span> String <span class="title">longestPalindrome</span><span class="params">(String s)</span></span>&#123;</div><div class="line">    <span class="keyword">int</span> l=s.length();</div><div class="line">    <span class="keyword">int</span> max=<span class="number">1</span>;</div><div class="line">    <span class="keyword">int</span> start=<span class="number">0</span>;</div><div class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;l;i++)</div><div class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> j=i+<span class="number">1</span>;j&lt;l;j++)&#123;</div><div class="line">            <span class="keyword">int</span> temp1,temp2;</div><div class="line">            <span class="keyword">for</span>(temp1=i,temp2=j;temp1&lt;temp2;temp1++,temp2--)</div><div class="line">                <span class="keyword">if</span>(s.charAt(temp1)!=s.charAt(temp2)&#123;</div><div class="line">                    <span class="keyword">break</span>;</div><div class="line">                &#125;</div><div class="line">            <span class="keyword">if</span>(temp1&gt;=temp2&amp;&amp;j-i&gt;=max)&#123;</div><div class="line">            max=j-i+<span class="number">1</span>;</div><div class="line">            start=i;</div><div class="line">            &#125;					</div><div class="line">        &#125;</div><div class="line">    <span class="keyword">return</span> s.substring(start,start+max);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="2-Dynamic-Programming-動態規劃"><a href="#2-Dynamic-Programming-動態規劃" class="headerlink" title="2.Dynamic Programming(動態規劃)"></a>2.Dynamic Programming(動態規劃)</h3><p>可以根据动态规划的两个特点：第一大问题拆解为小问题，第二重复利用之前的计算结果，来解答这道题。那如何划分小问题呢，我们可以先把所有长度最短为1的子字符串计算出来，根据起始位置从左向右，这些必定是回文。然后计算所有长度为2的子字符串，再根据起始位置从左向右。到长度为3的时候，我们就可以利用上次的计算结果：如果中心对称的短字符串不是回文，那长字符串也不是，如果短字符串是回文，那就要看长字符串两头是否一样。这样，一直到长度最大的子字符串，我们就把整个字符串集穷举完了，但是由于使用动态规划，使计算时间从O(N^3)减少到O(n^2)。<br>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/07/08/MY-NEW-POST/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -801,7 +807,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>

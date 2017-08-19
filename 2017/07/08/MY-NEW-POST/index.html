@@ -81,7 +81,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="hhh," />
+  <meta name="keywords" content="算法,字符串," />
 
 
 
@@ -99,17 +99,17 @@
 
 
 
-<meta name="description" content="interesting">
-<meta name="keywords" content="hhh">
+<meta name="description" content="1.Brute Force(暴力算法)123456789101112131415161718public String longestPalindrome(String s)&amp;#123;    int l=s.length();    int max=1;    int start=0;    for(int i=0;i&amp;lt;l;i++)        for(int j=i+1;j&amp;lt;l;">
+<meta name="keywords" content="算法,字符串">
 <meta property="og:type" content="article">
-<meta property="og:title" content="MY NEW POST">
+<meta property="og:title" content="最長回文算法">
 <meta property="og:url" content="https://tongnianmianbao.github.io/2017/07/08/MY-NEW-POST/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="interesting">
-<meta property="og:updated_time" content="2017-07-08T03:58:57.458Z">
+<meta property="og:description" content="1.Brute Force(暴力算法)123456789101112131415161718public String longestPalindrome(String s)&amp;#123;    int l=s.length();    int max=1;    int start=0;    for(int i=0;i&amp;lt;l;i++)        for(int j=i+1;j&amp;lt;l;">
+<meta property="og:updated_time" content="2017-08-16T12:02:16.226Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="MY NEW POST">
-<meta name="twitter:description" content="interesting">
+<meta name="twitter:title" content="最長回文算法">
+<meta name="twitter:description" content="1.Brute Force(暴力算法)123456789101112131415161718public String longestPalindrome(String s)&amp;#123;    int l=s.length();    int max=1;    int start=0;    for(int i=0;i&amp;lt;l;i++)        for(int j=i+1;j&amp;lt;l;">
 
 
 
@@ -143,7 +143,7 @@
 
 
 
-  <title>MY NEW POST | Hexo</title>
+  <title>最長回文算法 | Hexo</title>
   
 
 
@@ -343,7 +343,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">MY NEW POST</h1>
+          <h1 class="post-title" itemprop="name headline">最長回文算法</h1>
         
 
         <div class="post-meta">
@@ -378,8 +378,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/test/" itemprop="url" rel="index">
-                    <span itemprop="name">test</span>
+                  <a href="/categories/算法/" itemprop="url" rel="index">
+                    <span itemprop="name">算法</span>
                   </a>
                 </span>
 
@@ -395,7 +395,7 @@
 
           
           
-             <span id="/2017/07/08/MY-NEW-POST/" class="leancloud_visitors" data-flag-title="MY NEW POST">
+             <span id="/2017/07/08/MY-NEW-POST/" class="leancloud_visitors" data-flag-title="最長回文算法">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -423,7 +423,10 @@
       
 
       
-        
+        <h3 id="1-Brute-Force-暴力算法"><a href="#1-Brute-Force-暴力算法" class="headerlink" title="1.Brute Force(暴力算法)"></a>1.Brute Force(暴力算法)</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">public</span> String <span class="title">longestPalindrome</span><span class="params">(String s)</span></span>&#123;</div><div class="line">    <span class="keyword">int</span> l=s.length();</div><div class="line">    <span class="keyword">int</span> max=<span class="number">1</span>;</div><div class="line">    <span class="keyword">int</span> start=<span class="number">0</span>;</div><div class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;l;i++)</div><div class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> j=i+<span class="number">1</span>;j&lt;l;j++)&#123;</div><div class="line">            <span class="keyword">int</span> temp1,temp2;</div><div class="line">            <span class="keyword">for</span>(temp1=i,temp2=j;temp1&lt;temp2;temp1++,temp2--)</div><div class="line">                <span class="keyword">if</span>(s.charAt(temp1)!=s.charAt(temp2)&#123;</div><div class="line">                    <span class="keyword">break</span>;</div><div class="line">                &#125;</div><div class="line">            <span class="keyword">if</span>(temp1&gt;=temp2&amp;&amp;j-i&gt;=max)&#123;</div><div class="line">            max=j-i+<span class="number">1</span>;</div><div class="line">            start=i;</div><div class="line">            &#125;					</div><div class="line">        &#125;</div><div class="line">    <span class="keyword">return</span> s.substring(start,start+max);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="2-Dynamic-Programming-動態規劃"><a href="#2-Dynamic-Programming-動態規劃" class="headerlink" title="2.Dynamic Programming(動態規劃)"></a>2.Dynamic Programming(動態規劃)</h3><p>可以根据动态规划的两个特点：第一大问题拆解为小问题，第二重复利用之前的计算结果，来解答这道题。那如何划分小问题呢，我们可以先把所有长度最短为1的子字符串计算出来，根据起始位置从左向右，这些必定是回文。然后计算所有长度为2的子字符串，再根据起始位置从左向右。到长度为3的时候，我们就可以利用上次的计算结果：如果中心对称的短字符串不是回文，那长字符串也不是，如果短字符串是回文，那就要看长字符串两头是否一样。这样，一直到长度最大的子字符串，我们就把整个字符串集穷举完了，但是由于使用动态规划，使计算时间从O(N^3)减少到O(n^2)。<br><a id="more"></a><br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">public</span> String <span class="title">longestPalindrome</span><span class="params">(String s)</span></span>&#123;</div><div class="line">    <span class="keyword">int</span> l=s.length();</div><div class="line">    <span class="keyword">int</span> max=<span class="number">0</span>;</div><div class="line">    <span class="keyword">int</span> start=<span class="number">0</span>;</div><div class="line">    <span class="keyword">boolean</span>[][] dp=<span class="keyword">new</span> <span class="keyword">boolean</span>[l][l];</div><div class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;l;i++)&#123;</div><div class="line">        dp[i][i]=<span class="keyword">true</span>;</div><div class="line">        <span class="keyword">if</span>(i&lt;l-<span class="number">1</span> &amp;&amp; s.charAt(i)==s.charAt(i+<span class="number">1</span>))&#123;</div><div class="line">            dp[i][i+<span class="number">1</span>]=<span class="keyword">true</span>;</div><div class="line">            max=<span class="number">2</span>;</div><div class="line">            start=i;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> len=<span class="number">3</span>;len&lt;=l;len++)<span class="comment">//子串長度</span></div><div class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;=l-len;i++)&#123;<span class="comment">//子串開始位置</span></div><div class="line">            <span class="keyword">int</span> j=i+len-<span class="number">1</span>;<span class="comment">//子串結束位置</span></div><div class="line">            <span class="keyword">if</span>(dp[i+<span class="number">1</span>][j-<span class="number">1</span>]&amp;&amp;s.charAt(i)==s.charAt(j))&#123;</div><div class="line">                dp[i][j]=<span class="keyword">true</span>;</div><div class="line">                max=len;</div><div class="line">                start=i;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">    <span class="keyword">if</span>(max&gt;=<span class="number">2</span>) </div><div class="line">        <span class="keyword">return</span> s.substring(start,start+max);</div><div class="line">    <span class="keyword">return</span> <span class="string">""</span>+s.charAt(<span class="number">0</span>);    </div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<h3 id="3-Expand-around-center-中心擴展"><a href="#3-Expand-around-center-中心擴展" class="headerlink" title="3.Expand around center(中心擴展)"></a>3.Expand around center(中心擴展)</h3><p>动态规划虽然优化了时间，但也浪费了空间。实际上并不需要一直存储所有子字符串的回文情况，需要知道的只是中心对称的较小一层是否是回文。所以如果从小到大连续以某点为个中心的所有子字符串进行计算，就能省略这个空间。 这种解法中，外层循环遍历的是子字符串的中心点，内层循环则是从中心扩散，一旦不是回文就不再计算其他以此为中心的较大的字符串。由于中心对称有两种情况，一是奇数个字母以某个字母对称，而是偶数个字母以两个字母中间为对称，所以要分别计算这两种对称情况。<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">int</span> max=<span class="number">0</span>;</div><div class="line"><span class="keyword">int</span> start=<span class="number">0</span>;</div><div class="line"><span class="function"><span class="keyword">public</span> String <span class="title">longestPalindrome</span><span class="params">(String s)</span></span>&#123;</div><div class="line">    <span class="keyword">int</span> l=s.length();</div><div class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;l;i++)&#123;</div><div class="line">        expand(s,i,<span class="number">0</span>);<span class="comment">//奇數串</span></div><div class="line">        expand(s,i,<span class="number">1</span>);<span class="comment">//偶數串</span></div><div class="line">    &#125;</div><div class="line">    <span class="keyword">return</span> s.substring(start,start+max);</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">expand</span><span class="params">(String s,<span class="keyword">int</span> i,<span class="keyword">int</span> j)</span></span>&#123;</div><div class="line">    <span class="keyword">int</span> l=i;</div><div class="line">    <span class="keyword">int</span> r=i+j;</div><div class="line">    <span class="keyword">while</span>(l&gt;=<span class="number">0</span>&amp;&amp;r&lt;s.length()&amp;&amp;s.charAt(l)==s.charAt(r))&#123;</div><div class="line">        <span class="keyword">if</span>(r-l+<span class="number">1</span>&gt;max)&#123;</div><div class="line">            max=r-l+<span class="number">1</span>;</div><div class="line">            start=l;</div><div class="line">        &#125;</div><div class="line">        l--;</div><div class="line">        r++;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<h3 id="4-Manacher-馬拉車算法"><a href="#4-Manacher-馬拉車算法" class="headerlink" title="4.Manacher(馬拉車算法)"></a>4.Manacher(馬拉車算法)</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">public</span> String <span class="title">longestPalindrome</span><span class="params">(String s)</span></span>&#123;</div><div class="line">    <span class="keyword">if</span>(s.length()&lt;=<span class="number">1</span>)&#123;</div><div class="line">        <span class="keyword">return</span> s;</div><div class="line">    &#125;</div><div class="line">    String str=preProcess(s);<span class="comment">//避免奇偶</span></div><div class="line">    <span class="keyword">int</span> id=<span class="number">0</span>;<span class="comment">//當前最右回文串中心點</span></div><div class="line">    <span class="keyword">int</span> max=<span class="number">0</span>;<span class="comment">//當前最右回文串右邊界</span></div><div class="line">    <span class="keyword">int</span> maxId=<span class="number">0</span>;<span class="comment">//當前最長回文串中心點</span></div><div class="line">    <span class="keyword">int</span> maxSpan=<span class="number">0</span>;<span class="comment">//當前最長回文串向左或向右能延伸的長度</span></div><div class="line">    <span class="keyword">int</span>[] p=<span class="keyword">new</span> <span class="keyword">int</span>[str.length()];</div><div class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> curr=<span class="number">1</span>;curr&lt;str.length();curr++)&#123;</div><div class="line">        p[curr]=curr&lt;max?Math.min(p[<span class="number">2</span>*id-curr],max-curr):<span class="number">1</span>;</div><div class="line">        <span class="keyword">while</span>((curr+p[curr])&lt;str.length()&amp;&amp;str.charAt(curr+p[curr])==str.charAt(curr-p[curr]))&#123;</div><div class="line">            p[curr]++;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">if</span>(curr+p[curr]&gt;max)&#123;</div><div class="line">            max=curr+p[curr];</div><div class="line">            id=curr;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">if</span>(p[curr]&gt;maxSpan)&#123;</div><div class="line">            maxSpan=p[curr];</div><div class="line">            maxId=curr;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">return</span> s.substring((maxId-maxSpan)/<span class="number">2</span>,(maxId+maxSpan)/<span class="number">2</span>-<span class="number">1</span>);</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">public</span> String <span class="title">preProcess</span><span class="params">(String s)</span></span>&#123;</div><div class="line">    StringBuilder sb=<span class="keyword">new</span> StringBuilder();</div><div class="line">    sb.append(<span class="string">"$"</span>);</div><div class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;s.length();i++)&#123;</div><div class="line">        sb.append(<span class="string">"#"</span>);</div><div class="line">        sb.append(s.charAt(i));</div><div class="line">    &#125;</div><div class="line">    sb.append(<span class="string">"#"</span>);</div><div class="line">    <span class="keyword">return</span> sb.toString();</div><div class="line">&#125;</div></pre></td></tr></table></figure>
       
     </div>
 
@@ -452,7 +455,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/hhh/" rel="tag"># hhh</a>
+            <a href="/tags/算法/" rel="tag"># 算法</a>
+          
+            <a href="/tags/字符串/" rel="tag"># 字符串</a>
           
         </div>
       
@@ -545,8 +550,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -583,7 +597,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -626,6 +640,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-Brute-Force-暴力算法"><span class="nav-number">1.</span> <span class="nav-text">1.Brute Force(暴力算法)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-Dynamic-Programming-動態規劃"><span class="nav-number">2.</span> <span class="nav-text">2.Dynamic Programming(動態規劃)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-Expand-around-center-中心擴展"><span class="nav-number">3.</span> <span class="nav-text">3.Expand around center(中心擴展)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-Manacher-馬拉車算法"><span class="nav-number">4.</span> <span class="nav-text">4.Manacher(馬拉車算法)</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
